@@ -21,7 +21,7 @@ def draw():
     pushMatrix()
     translate(position.x, position.y)
     rotate(angle)
-    noFill()
+    # noFill()
     rect(0, -5, 50, 10)
     popMatrix()
     
@@ -29,6 +29,7 @@ def draw():
         gravity = PVector(0, 0.2)
         ball.applyForce(gravity)
         ball.update()
+    
     ball.display() 
     
     if ball.position.y > height:
@@ -39,7 +40,7 @@ def draw():
     text("SPACE : shot, RIGHT/LEFT : angle", 20, height-20)
 
 def keyPressed():
-    global angle
+    global angle, ball, shot
     if key ==CODED and keyCode == RIGHT : angle += 0.1
     elif key == CODED and keyCode == LEFT : angle -= 0.1
     elif key == ' ' :

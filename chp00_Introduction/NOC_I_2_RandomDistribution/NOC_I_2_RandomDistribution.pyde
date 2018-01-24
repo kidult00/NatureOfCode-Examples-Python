@@ -8,7 +8,7 @@ def setup():
 
 def draw():
     background(255)
-    global randomCounts
+
     # Pick a random number and increase the count
     index = int(random(len(randomCounts)))
     randomCounts[index] += 1

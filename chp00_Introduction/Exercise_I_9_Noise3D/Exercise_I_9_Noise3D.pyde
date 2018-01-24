@@ -15,7 +15,7 @@ def draw():
     background(0)
     # Optional: adjust noise detail here
     # noiseDetail(8, 0.65) # https://processing.org/reference/noiseDetail_.html
-    global zoff, step, zstep
+    global zoff #, step, zstep
     
     loadPixels()
     
